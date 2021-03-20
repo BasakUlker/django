@@ -12,6 +12,4 @@ pip install pysqlite3
 
 # Program
 
-![image/png](django/Screenshot from 2021-03-21 00-52-50.png/00-52-50.png)
-
- 
+![image/png](django/Screenshot from 2021-03-21 00-52-50.png) 
