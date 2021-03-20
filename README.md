@@ -5,8 +5,8 @@ Here is my firts project with django.
 # Requirements
 
 - Signing Up to RapidApi for this Api Keys:
-  *https://imdb8.p.rapidapi.com/actors/get-bio
-  *https://imdb8.p.rapidapi.com/actors/list-most-popular-celebs
+  * https://imdb8.p.rapidapi.com/actors/get-bio
+  * https://imdb8.p.rapidapi.com/actors/list-most-popular-celebs
 - render and HttpResponse Modules from django.shortcuts
 - json Module
 - os Module
