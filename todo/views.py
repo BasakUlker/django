@@ -20,7 +20,9 @@ def index(request):
 
 
             if os.path.exists("celebsname.sqlite"):
-                im.execute("""INSERT INTO celebsname VALUES (?)""",[name])
+                if(name!=None):
+                   
+                    im.execute("""INSERT INTO celebsname VALUES (?)""",[name])
                 celebsname.commit()
             im.close()
             return celebsname
@@ -52,7 +54,7 @@ def index(request):
 
     response = requests.request("GET", url, headers=headers, params=querystring)
     result = json.loads(response.text)
-    for i in range(0,10):#id's are sent "getName()"function one by one and added on database with "insertName"function.
+    for i in range(0,5):#id's are sent "getName()"function one by one and added on database with "insertName"function.
         name = getName(result[i][6:-1])
         #print(name)
         insertName(name)
