@@ -5,7 +5,6 @@ import json
 import sqlite3
 import os
 
-# Create your views here.
 #index is the view.
 def index(request):
 
