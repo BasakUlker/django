@@ -12,4 +12,5 @@ pip install pysqlite3
 
 # Program
 
-![image/png](django/Screenshot from 2021-03-21 00-52-50.png) 
+It's a view page that based on django framework.
+
