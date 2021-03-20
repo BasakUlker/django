@@ -4,8 +4,11 @@ Here is my firts project with django.
 
 # Requirements
 
-- Signing Up to RapidApi for this Api Keys:
+- Signing Up to RapidApi for Api Keys in the program:
   * https://rapidapi.com/apidojo/api/imdb8/endpoints
+    - Endpoints:
+    - get-bio
+    - list-most-popular-celebs
 - render and HttpResponse Modules from django.shortcuts
 - json Module
 - os Module
