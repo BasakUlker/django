@@ -12,6 +12,6 @@ pip install pysqlite3
 
 # Program
 
-![image/png](Screenshot from 2021-03-21 00-52-50.png)
+![image/png](00-52-50.png)
 
  
