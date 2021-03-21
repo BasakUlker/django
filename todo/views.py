@@ -8,23 +8,16 @@ import os
 #index is the view.
 def index(request):
 
-    #insertName function is my part of app. this def returns a database that include api datas below.
-    def insertName(name):
+    #Here is a database that include api datas below.
+    with sqlite3.connect('celebsname.sqlite') as celebsname:
 
-        with sqlite3.connect('celebsname.sqlite') as celebsname:
+        im=celebsname.cursor()
 
-            im=celebsname.cursor()
-
-            im.execute("""CREATE TABLE IF NOT EXISTS celebsname (Name)""")
-
-
-            if os.path.exists("celebsname.sqlite"):
-                if(name!=None):
-                   
-                    im.execute("""INSERT INTO celebsname VALUES (?)""",[name])
-                celebsname.commit()
-            im.close()
-            return celebsname
+        im.execute("""CREATE TABLE IF NOT EXISTS celebsname (Name)""")
+        
+        im.execute("DELETE FROM celebsname")
+  
+         
     #this def returns 'name' information of parameter from "https://imdb8.p.rapidapi.com/actors/get-bio".
     def getName(x):
 
@@ -53,14 +46,16 @@ def index(request):
 
     response = requests.request("GET", url, headers=headers, params=querystring)
     result = json.loads(response.text)
-    for i in range(0,5):#id's are sent "getName()"function one by one and added on database with "insertName"function.
-        name = getName(result[i][6:-1])
-        #print(name)
-        insertName(name)
+    for i in range(0,5):#id's are sent "getName()"function one by one and added on the database.
+        name = getName(result[i][6:-1]
+        if os.path.exists("celebsname.sqlite"):
+            if(name!=None):
+                im.execute("""INSERT INTO celebsname VALUES (?)""",[name])
+            celebsname.commit()
 
-    im = insertName(None).cursor()
     im.execute("SELECT * FROM celebsname")
     al = im.fetchall()#selected all of datas from "celebsname" db
+    im.close()
 
 
     return HttpResponse("{}".format(al))#published datas on homepage
