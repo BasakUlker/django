@@ -23,4 +23,4 @@ It's a view page that based on django framework.
 
 # Explanation
 
-Datas, where getting from IMDb api, are registered in a database. After this part, datas are selected and registered on a html page in this program. views.py is not a executable file till add a urls.py, a settings.py files.   
+Datas, where getting from IMDb api, are registered in a database. After this part, datas are selected and shown on a html page in this program. views.py is not a executable file till add a urls.py, a settings.py files.   
