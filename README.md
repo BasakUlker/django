@@ -10,6 +10,7 @@ Here is my firts project with django.
     - get-bio
     - list-most-popular-celebs
 - render and HttpResponse Modules from django.shortcuts
+- MultipleObjectsReturned module from django.core.exceptions
 - json Module
 - os Module
 - `pip install requests`
