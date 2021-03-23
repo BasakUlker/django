@@ -39,7 +39,7 @@ def get_insert_datas():
     result = json.loads(response.text)
     for i in range(0,5): #id's are sent "getName()"function one by one and added on the database.
         try:
-            Post.objects.update_or_create(celebs_id=result[i][8:-1],name=getName(result[i][6:-1])) #create database object 
+            Post.objects.update_or_create(celebs_id=result[i][6:-1],name=getName(result[i][6:-1])) #create database object 
         except MultipleObjectsReturned as e:
             print (e)
     posts=Post.objects.distinct() #distinct same datas
