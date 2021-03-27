@@ -44,5 +44,6 @@ def get_insert_datas():
             print (e)
     posts=Post.objects.distinct() #distinct same datas
     posts=Post.objects.values_list() #listing datas
+    posts=Post.objects.all()
 
     return posts
