@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Celebrities</title>
-		<style>
-			body{
-				background-color: black;
-			        border : 4px solid yellow;
-        			padding : 30px;
-				color : white;
-				text-align : center;
-			}
-		</style>
-				
-	</head>
-	<body>
-		{% for posts in posts %}
-		
-			{{posts.celebs_id}}
-			{{posts.name}}<br>
+        <head>
+                <meta charset="UTF-8">
+                <title>Celebrities</title>
+                <style>
+                        body{
+                                background-color: gray;
+                                border : 4px solid yellow;
+                                padding : 30px;
+                                color : white;
+                                text-align : center;
+                        }
+                </style>
+                                
+        </head>
+        <body>
+
+                <table>
+                <caption>Celebrities</caption>
+
+                        <tr>
+                                <th>ID</th>
+                                <th>Celeb's Name</th>
+                        </tr>
+                        {% for posts in posts %}
+
+                                <tr>
+                                        <td><a href="https://www.imdb.com/name/{{posts.celebs_id}}">{{posts.celebs_id}}</a></td>
+
+                                        <td>{{posts.name}}</td>
+                                </tr>
 
 
-		{% endfor %}
-	</body>
+                        {% endfor %}
+                </table>
+        </body>
 </html>
 
