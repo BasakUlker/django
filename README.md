@@ -20,7 +20,7 @@ Here is my firts project with django.
 
 It's a view page that based on django framework.
 
-![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-03-27%2023-01-09.png)
+![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-03-30%2022-47-53.png)
 
 # Explanation
 
