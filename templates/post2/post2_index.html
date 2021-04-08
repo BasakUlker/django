@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <title>Movie Series</title>
+                <style>
+                        body{
+                                background-color: gray;
+                                border : 4px solid yellow;
+                                padding : 30px;
+                                color : white;
+                        }
+                </style>
+                                
+        </head>
+        <body>
+
+
+		<h1> Films and Shows</h1>
+		<form>
+
+
+        		{% for posts in posts %}
+
+
+				<input type="checkbox" name="choise">{{posts.shows}}<br>
+
+
+                	{% endfor %}
+			<input type="submit" value=" Submit ">
+		</form>
+        </body>
+</html>
+
