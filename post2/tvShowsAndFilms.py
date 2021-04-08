@@ -15,7 +15,7 @@ def tvShowsNFilms():
         querystring = {"tconst": x}
 
         headers = {
-            'x-rapidapi-key': "13e99d63d0msh588de7123210a4cp187ccejsnb335b5808a72",
+            'x-rapidapi-key': "",
             'x-rapidapi-host': "imdb8.p.rapidapi.com"
         }
 
@@ -32,7 +32,7 @@ def tvShowsNFilms():
     url = "https://imdb8.p.rapidapi.com/title/get-top-rated-tv-shows"
 
     headers = {
-        'x-rapidapi-key': "13e99d63d0msh588de7123210a4cp187ccejsnb335b5808a72",
+        'x-rapidapi-key': "",
         'x-rapidapi-host': "imdb8.p.rapidapi.com"
         }
 
@@ -54,7 +54,7 @@ def tvShowsNFilms():
 
     querystring = {"homeCountry":"US","purchaseCountry":"US","currentCountry":"US"}
     headers = {
-        'x-rapidapi-key': "13e99d63d0msh588de7123210a4cp187ccejsnb335b5808a72",
+        'x-rapidapi-key': "",
         'x-rapidapi-host': "imdb8.p.rapidapi.com"
         }
 
@@ -76,7 +76,7 @@ def tvShowsNFilms():
     querystring = {"currentCountry":"US"}
 
     headers = {
-        'x-rapidapi-key': "13e99d63d0msh588de7123210a4cp187ccejsnb335b5808a72",
+        'x-rapidapi-key': "",
         'x-rapidapi-host': "imdb8.p.rapidapi.com"
         }
 
