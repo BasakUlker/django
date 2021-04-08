@@ -19,9 +19,9 @@ Here is my firts project with django.
 # Program
 
 It's a view page that based on django framework.
-![]()
+![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-04-09%2001-56-47.png)
 ![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-04-09%2001-56-36.png)
 
 # Explanation
 
-Datas, where getting from IMDb api, are registered in a database. After this part, datas are selected and shown on a html page in this program. views.py is not a executable file till add a urls.py, a settings.py files.   
+Datas, where getting from IMDb api, are registered in a database. After this part, datas are selected and shown on a html page in this program.
