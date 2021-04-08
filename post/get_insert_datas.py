@@ -14,7 +14,7 @@ def get_insert_datas():
         querystring = {"nconst": x}
 
         headers = {
-            'x-rapidapi-key': "709da9453fmsh5eac41924c01dd2p15fabcjsn2138cbc83099",
+            'x-rapidapi-key': "",
             'x-rapidapi-host': "imdb8.p.rapidapi.com"
         }
 
@@ -27,7 +27,7 @@ def get_insert_datas():
     querystring = {"homeCountry":"US","currentCountry":"US","purchaseCountry":"US"}
 
     headers = {
-        'x-rapidapi-key': "709da9453fmsh5eac41924c01dd2p15fabcjsn2138cbc83099",
+        'x-rapidapi-key': "",
         'x-rapidapi-host': "imdb8.p.rapidapi.com"
         }
 
