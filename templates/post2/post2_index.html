@@ -2,33 +2,37 @@
 <html lang="en">
         <head>
                 <meta charset="UTF-8">
+                <meta name='viewport'content="witdh=device-width,initial-schale=1,shrink-to-fit=no">
                 <title>Movie Series</title>
-                <style>
-                        body{
-                                background-color: gray;
-                                border : 4px solid yellow;
-                                padding : 30px;
-                                color : white;
-                        }
-                </style>
-                                
+                <link rel="stylesheet" href="boostrap.min.css">
+                <link rel="stylesheet" href="boostrap-grid.min.css">
+
+
         </head>
         <body>
 
 
-		<h1> Films and Shows</h1>
-		<form>
+                <h1> Films and Shows</h1>
+                <form  method="POST">
+
+                        {% csrf_token %}
+
+                        <table id="tab1">
+
+                                {% for posts in posts %}
+
+                                <tr>
+                                        <input type="checkbox" name="shows"value="{{posts.posts}}" >{{posts.shows}}<br>
+                                </tr>
+                                {% endfor %}
+                        </table>
 
 
-        		{% for posts in posts %}
 
+                        <input id="but1" type="submit" value="Show" />
 
-				<input type="checkbox" name="choise">{{posts.shows}}<br>
-
-
-                	{% endfor %}
-			<input type="submit" value=" Submit ">
-		</form>
+                </form>
         </body>
 </html>
+
 
