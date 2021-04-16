@@ -9,6 +9,7 @@ Here is my firts project with django.
     - Endpoints:
     - get-bio
     - list-most-popular-celebs
+- Boostrap CSS
 - render and HttpResponse Modules from django.shortcuts
 - MultipleObjectsReturned module from django.core.exceptions
 - json Module
@@ -20,7 +21,7 @@ Here is my firts project with django.
 
 It's a view page that based on django framework.
 ![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-04-16%2023-54-36.png)
-![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-04-09%2001-56-36.png)
+![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-04-16%2023-54-51.png)
 
 # Explanation
 
