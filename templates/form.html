@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name='viewport'content="witdh=device-width,initial-schale=1,shrink-to-fit=no">
+                <title>Movie Series</title>
+                <link rel="stylesheet" href="boostrap.min.css">
+                <link rel="stylesheet" href="boostrap-grid.min.css">
+		<script>
+			function getvalues()
+                        {
+                                var selected=new Array();
+                                var chkbox=document.getElementById("tab1");
+                                var selchk=chkbox.getElementsByTagName("input");
+                                for(var i=0;i<selchk.length;i++)
+                                {
+                                        if(selchk[i].disabled==true)
+                                        {
+                                                selected.push(selchk[i].value);
+                                        }
+                                }
+                                if(selected.length>0)
+                                {
+                                        document.getElementById("displayvalues").innerHTML=selected;
+                                        document.getElementById("but1").addEventListener("click", getvalues);
+                                }
+				alert("getvalues");
+				
+
+                        }
+                </script>
+
+
+        </head>
+        <body>
+
+
+                <h1> Films and Shows</h1>
+
+                {% csrf_token %}
+
+		<table id="tab1">
+                        {% for posts in posts %}
+
+				<tr><input type="checkbox" class="chkbx" value="{{posts.shows}}">{{posts}} </tr>
+				<br>
+                       	{% endfor %}
+		</table>
+
+
+
+		<input id="but1" type="button" value="Display My List" onclick="getvalues()"/>
+		<b id="displayvalues" ></b>
+        </body>
+</html>
+
+
