@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+                        .bg-1 {
+                                background-color: #474e5d; /* Dark Blue */
+                                color: #ffffff;
+                        }
+                	.navbar {
+                                padding-top: 15px;
+                                padding-bottom: 15px;
+                                border: 0;
+                                border-radius: 0;
+                                margin-bottom: 0;
+                                font-size: 12px;
+                                letter-spacing: 5px;
+                        }
+                        .navbar-nav  li a:hover {
+                                color: #1abc9c !important;
+                        }
+
+		</style>
+
+		<title>Celebrities</title>
+
+				
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                                <div class="navbar-header">
+                                        <a class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+                                </div>
+                                <ul class="nav navbar-nav">
+                                        <li class="active"><a href="http://127.0.0.1:8000/movieseries/">Movie Series</a></li>
+                                        <li><a href="http://127.0.0.1:8000/celebrities/">Celebrities</a></li>
+                                </ul>
+                        </div>
+                </nav>
+
+		<div class="container-fluid bg-1 text-center">
+
+			<table class="table table-hover">
+			<caption>Celebrities</caption>
+
+				<tr>
+					<th>ID</th>
+					<th>Celeb's Name</th>
+				</tr>
+				{% for posts in posts %}
+		
+					<tr>
+						<td><a href="https://www.imdb.com/name/{{posts.celebs_id}}">{{posts.celebs_id}}</a></td>
+
+						<td><a href="https://www.imdb.com/name/{{posts.celebs_id}}">{{posts.name}}</a></td>
+					</tr>
+
+
+				{% endfor %}	
+			</table>
+			<footer class="container-fluid bg-4 text-center">
+                        	<p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+                	</footer>
+
+		</div>
+	</body>
+</html>
+
