@@ -22,5 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home, name='homepage'),
     url(r'^movieseries/', post2_index, name='movieseries'),
-    url(r'^celebrities/', index, name='celebrities'),
+    #url(r'^celebrities/', index, name='celebrities'),
+    url(r'^yourlist/', yourlist, name='listshow'),
+
 ]
