@@ -9,11 +9,17 @@ Here is my firts project with django.
     - Endpoints:
     - get-bio
     - list-most-popular-celebs
+    - get-plots
+    - get-top-rated-tv-shows
+    - get-most-popular-movies
+    - get-coming-soon-tv-shows
 - Boostrap CSS
-- render and HttpResponse Modules from django.shortcuts
+- render, get_object_or_404, HttpResponseRedirect, redirect, HttpResponse Modules from django.shortcuts
 - MultipleObjectsReturned module from django.core.exceptions
 - json Module
 - os Module
+- from django.http import QueryDict
+- from django.urls import NoReverseMatch
 - `pip install requests`
 - `pip install pysqlite3`
 
@@ -27,4 +33,4 @@ It's a view page that based on django framework.
 
 # Explanation
 
-Datas, where getting from IMDb api, are registered in a database. After this part, datas are selected and shown on a html page in this program.
+Datas, where getting from IMDb api, are registered in a database. After this part, datas are selected and shown on a html page in this program. Boostrap CSS was integrated for style.
