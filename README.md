@@ -3,7 +3,7 @@
 Here is my firts project with django. 
 
 # Requirements
-
+- SQLite3
 - Signing Up to RapidApi for Api Keys in the program:
   * https://rapidapi.com/apidojo/api/imdb8/endpoints
     - Endpoints:
