@@ -9,11 +9,10 @@
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<style>
                         .bg-1 {
-                                background-image: url("https://www.webtekno.com/images/editor/default/0001/83/221726443809c48b9afb918958ba8efea2d42b69.jpeg"); /* Dark Blue */
+                                background-image: url("https://productimages.hepsiburada.net/s/40/1500/10678372991026.jpg"); /* Dark Blue */
                                 color: #ffffff;
-                                background-size: 500px 200px;
-
-			}
+                                background-size: 800px 600px;
+                        }
 			.navbar {
                                 padding-top: 15px;
                                 padding-bottom: 15px;
@@ -42,25 +41,25 @@
                                         <li class="active"><a href="http://127.0.0.1:8000/movieseries/">Movie Series</a></li>
 
 				</ul>
+                                <ul class="nav navbar-nav">
+                                        <li class="activate" style="float:right"><a href="http://127.0.0.1:8000/yourlist/">Your List</a></li>
+                                </ul>
+
                         </div>
                 </nav>
 
 		<div class="container bg-1 ">	
 
-			<h1>Your List </h1>
+			<h1 style="color:white;background-color:gray">Your List </h1>
+			<ul>
+				{%for post in posts %}
+					<li style="color:blue"><p style="color:gray"><strong>{{post}}</strong></p></li>
+				{%endfor%}
+			</ul>
 
-                        <form method="POST">
-
-                                {% csrf_token %}
-                                <ul class='row'>
-                                        {% for post in posts %}
-
-                                                <div class="checkbox">
-                                                        <input type="checkbox" name="shows" value="{{post}}"checked>{{post}}<br>
-                                                </div>
-                                        {% endfor %}
-                                </ul>
-			<button type="submit" class="btn btn-default">Save</button>
+			<button type="button" class="btn btn-default" onclick="window.location.href='http://127.0.0.1:8000/editpage/';" >
+				Edit
+			</button>
 			<br>
 			<br>
 			<br>
