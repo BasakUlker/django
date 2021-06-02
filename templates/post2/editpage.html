@@ -9,9 +9,9 @@
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
                 <style>
                         .bg-1 {
-                                background-image: url("https://posterfabrikasi.com/wp-content/uploads/2020/01/m1-copy-31-600x600.jpg"); /* Dark Blue */
+                                background-image: url("https://www.log.com.tr/wp-content/uploads/2019/03/game-of-thrones-8-sezon-poster-18-660x982.jpg"); /* Dark Blue */
                                 color: #ffffff;
-                                background-size: 700px 600px;
+                                background-size: 750px 800px;
                         }
 			.navbar {
                                 padding-top: 15px;
@@ -50,20 +50,19 @@
 
                 <div class="container bg-1 ">
 
-                        <h1 style="color:gray">Your List </h1>
+                        <h1 style="color:white;">Your List </h1>
 
                         <form method="POST">
 
                                 {% csrf_token %}
-                                <ul class='row'>
-                                        {% for post in posts %}
+                                {% for post in posts %}
 
-                                                <div class="checkbox">
-							<input type="checkbox" name="shows" value="{{post}}"checked><p style="color:gray"><strong>{{post}}</strong></p><br>
-                                                </div>
-                                        {% endfor %}
-                                </ul>
+                       	        	<div class="checkbox">
+						<input type="checkbox" name="shows" value="{{post}}"checked><p class="a"style="color:white"><strong>{{post}}</strong></p>
+                                        </div>
+				{% endfor %}
                         <button type="submit" class="btn btn-default">Save</button>
+			<a href="http://127.0.0.1:8000/resetlist/" class="btn btn-danger">Reset All</a>
                         <br>
                         <br>
                         <br>

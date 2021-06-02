@@ -11,7 +11,7 @@
  				 font-family: "Stencil Std",fantasy;
 			}
 			.bg-1 {
-  				background-image: url("https://1.bp.blogspot.com/-wDgZgZH3d7A/XdvLQTvWRAI/AAAAAAAAJag/A1mScfl_VrsVu71tIowBwYkvFR_FksgbwCLcBGAsYHQ/s1600/bird%2Bbox.jpg"); /* Dark Blue */
+  				background-image: url("https://kulturflix.com/wp-content/uploads/2019/10/NewsItem_636498110777931214_c_80.jpg"); /* Dark Blue */
     				color: #ffffff;
                                 background-size: 800px 1000px;
 			}
@@ -69,21 +69,21 @@
   			</div>
 		</nav>
 		<div class="container bg-1">
-			<h1 style="color:white;background-color:gray"> Films and Shows</h1>
+			<h1 style="color:white;"> Films and Shows</h1>
 			<form method="POST">
 				<div class="checkbox">
 				{% csrf_token %}
-				<p style="color:white;background-color:gray">Top Rated Tv Shows</p>	
-       				{% for post in posts %}
-					<input type="checkbox" name="shows" value="{{post}}"><p class="a"style="color:gray"><strong>{{post}}</strong></p>
+				<p style="color:white;"><span class="glyphicon glyphicon-star"></span><strong>Top Rated Tv Shows</strong></p>	
+				{% for post in posts %}
+					<input type="checkbox" name="shows" value="{{post}}"><p class="a"style="color:white"><strong>{{post}}</strong></p>
 				{% endfor %}
-				<p style="color:white;background-color:gray">Most Popular Movies</p>	
+				<p style="color:white;"><span class="glyphicon glyphicon-star"></span> <strong>Most Popular Movies</strong></p>	
 				{% for data in filmdatas %}
-					<input type="checkbox" name="data" value="{{data}}"><p class="a"style="color:gray"><strong>{{data}}</strong></p>
+					<input type="checkbox" name="data" value="{{data}}"><p class="a"style="color:white"><strong>{{data}}</strong></p>
                                	{% endfor %}
-				<p style="color:white;background-color:gray">Coming Soon Tv Shows</p>	
+				<p style="color:white;"><span class="glyphicon glyphicon-star"></span> <strong>Coming Soon Tv Shows</strong></p>	
 				{% for data2 in seriesdatas %}
-					<input type="checkbox" name="data2" value="{{data2}}"><p class="a"style="color:gray"><strong>{{data2}}</strong></p>
+					<input type="checkbox" name="data2" value="{{data2}}"><p class="a"style="color:white"><strong>{{data2}}</strong></p>
                                	{% endfor %}
 				</div>
 			<button type="submit" class="btn btn-default">Submit</button>
