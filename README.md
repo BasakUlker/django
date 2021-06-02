@@ -27,13 +27,13 @@ Here is my firts project with django.
 
 It's a view page that based on django framework.
 Home Page:
-![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-05-24%2021-03-50.png)
+![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-06-02%2019-35-30.png)
 Form Page:
-![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-05-24%2021-04-06.png)
+![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-06-02%2019-35-41.png)
 Chosen Datas from Form Page:
-![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-05-24%2021-04-10.png)
+![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-06-02%2019-35-55.png)
 Edit Page
-![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-05-24%2021-04-21.png)
+![](https://github.com/BasakUlker/django/blob/main/Screenshot%20from%202021-06-02%2019-36-02.png)
 
 
 # Explanation
